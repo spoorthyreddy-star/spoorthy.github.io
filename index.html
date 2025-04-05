@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CeraVe Products</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://www.cerave.com/-/media/Project/Loreal/Brand-Sites/CeraVe/USA/Articles/2021/01/cerave_moisturizing_cream_banner.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #004085;
+      display: flex;
+      justify-content: space-around;
+      padding: 1em;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4em 2em;
+      background-color: rgba(255, 255, 255, 0.8);
+      margin: 2em;
+      border-radius: 10px;
+    }
+
+    .filters {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      margin: 1em;
+    }
+
+    .filters input,
+    .filters select {
+      padding: 0.5em;
+      font-size: 1em;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+      padding: 2em;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1em;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .product h3 {
+      margin-top: 0.5em;
+    }
+
+    .product button {
+      margin-top: 0.5em;
+      padding: 0.5em 1em;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .video-section {
+      text-align: center;
+      margin: 3em 0;
+    }
+
+    footer {
+      background-color: #004085;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to CeraVe Skincare</h1>
+    <p>Your dermatologist-recommended skincare brand</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Hydrate and Restore Your Skin</h2>
+    <p>Developed with dermatologists to help restore the skin’s natural barrier.</p>
+    <button onclick="alert('Explore products!')">Explore Now</button>
+  </div>
+
+  <div class="filters">
+    <input type="text" placeholder="Search products...">
+    <select>
+      <option>Sort by</option>
+      <option value="price">Price</option>
+      <option value="rating">Rating</option>
+    </select>
+  </div>
+
+  <section class="products" id="products">
+    <div class="product">
+      <img src="https://www.cerave.com/-/media/Project/Loreal/Brand-Sites/CeraVe/USA/Images/products/creams-lotions/cerave-moisturizing-cream.jpg" alt="Moisturizing Cream">
+      <h3>Moisturizing Cream</h3>
+      <p>Rich, non-greasy, fast-absorbing moisturizer for normal to dry skin.</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="product">
+      <img src="https://www.cerave.com/-/media/Project/Loreal/Brand-Sites/CeraVe/USA/Images/products/cleansers/foaming-facial-cleanser.jpg" alt="Foaming Facial Cleanser">
+      <h3>Foaming Facial Cleanser</h3>
+      <p>Gently cleanses and refreshes the skin without over-stripping it.</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="product">
+      <img src="https://www.cerave.com/-/media/Project/Loreal/Brand-Sites/CeraVe/USA/Images/products/cleansers/hydrating-facial-cleanser.jpg" alt="Hydrating Facial Cleanser">
+      <h3>Hydrating Facial Cleanser</h3>
+      <p>For normal to dry skin with ceramides and hyaluronic acid.</p>
+      <button>Buy Now</button>
+    </div>
+  </section>
+
+  <div class="video-section">
+    <h2>Learn More About CeraVe</h2>
+    <video width="640" height="360" controls>
+      <source src="https://www.cerave.com/-/media/Project/Loreal/Brand-Sites/CeraVe/USA/Video/CeraVe-Brand-Overview.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 CeraVe Skincare. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
